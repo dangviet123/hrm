@@ -12,6 +12,10 @@
 */
 
 
+Route::get('/', function () {
+    return redirect('admincp');
+});
+
 Route::group(['prefix' => 'admincp'], function() {
     Route::get('/', function () {
         return view('admincp.index');

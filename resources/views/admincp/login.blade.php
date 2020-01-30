@@ -12,8 +12,8 @@
     <title>HRM - Đăng nhập</title>
     <base href="{{asset('')}}" >
     <!-- Bootstrap -->
-    <link href="public/admin/all.css" rel="stylesheet">
-    <link href="public/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('admin/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
   </head>
 
   <body class="login">
@@ -22,7 +22,7 @@
         <notifications group="infomation" />
         
     </div>
-    <script src="{{ asset('public/js/admincp.js') }}"></script>
+    <script src="{{ asset('js/admincp.js') }}"></script>
     <script>
         
     </script>

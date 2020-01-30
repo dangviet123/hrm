@@ -223,8 +223,8 @@
 									</p-check>
 								</th>
 								<td class="text-center">
-									<img v-if="data.Image==''" src="public/images/users/noav.png" style="width: 29px;height: 29px;border-radius: 50%;">
-									<img v-else  :src="(data.Image != '') ? './public/images/users/'+data.Image : data.Image " style="width: 29px;height: 29px;border-radius: 50%;">
+									<img v-if="data.Image==''" src="images/users/noav.png" style="width: 29px;height: 29px;border-radius: 50%;">
+									<img v-else  :src="(data.Image != '') ? 'images/users/'+data.Image : data.Image " style="width: 29px;height: 29px;border-radius: 50%;">
 								</td>
 								<td class="text-center" @click="datas[index].checked=!datas[index].checked">
 									<v-popover  placement="right">

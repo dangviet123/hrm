@@ -57,52 +57,52 @@ import UpdateCalculated from '../components/admincp/pages/salarys/calculated/edi
 
 
 export const routes = [
-	{path: '/',name: 'dashboard',component: dashboard},
-	{path: '/login',name: 'login',component: IndexLogin},
-	{path: '/home',name: 'dashboard1',component: dashboard},
-	{path: '/staff-information/users/',name: 'users.index',component: IndexUsers},
-	{path: '/staff-information/users/create',name: 'users.create',component: CreateUsers},
-	{path: '/staff-information/users/:idUser/edit',name: 'users.edit',component: UpdateUsers},
+    { path: '/', name: 'dashboard', component: dashboard },
+    { path: '/login', name: 'login', component: IndexLogin },
+    { path: '/home', name: 'dashboard1', component: dashboard },
+    { path: '/staff-information/users/', name: 'users.index', component: IndexUsers },
+    { path: '/staff-information/users/create', name: 'users.create', component: CreateUsers },
+    { path: '/staff-information/users/:idUser/edit', name: 'users.edit', component: UpdateUsers },
 
-	{path: '/staff-information/achievements/',name: 'achievements.index',component: IndexAchievements},
-	{path: '/staff-information/achievements/create',name: 'achievements.create',component: CreateAchievements},
-	{path: '/staff-information/achievements/:idAchievements/edit',name: 'achievements.edit',component: UpdateAchievements},
+    { path: '/staff-information/achievements/', name: 'achievements.index', component: IndexAchievements },
+    { path: '/staff-information/achievements/create', name: 'achievements.create', component: CreateAchievements },
+    { path: '/staff-information/achievements/:idAchievements/edit', name: 'achievements.edit', component: UpdateAchievements },
 
-	{path: '/staff-information/promote/',name: 'promote.index',component: IndexPromote},
-	{path: '/staff-information/promote/create',name: 'promote.create',component: CreatePromote},
-	{path: '/staff-information/promote/:idPromote/edit',name: 'promote.edit',component: UpdatePromote},
-	
-	{path: '/bgdata/typemenusystem/',name: 'typemenusystem.index',component: IndextypeMenusystem},
-	{path: '/bgdata/typemenusystem/:id/listmenu',name: 'typemenusystem.listmenu',component: ListmenuypeMenusystem},
-	{path: '/bgdata/listpermission/',name: 'listpermission.index',component: IndexListpermission},
-	
-	{path: '/bgdata/grouppermission/',name: 'grouppermission.index',component: IndexGrouppermission},
-	{path: '/bgdata/grouppermission/:id/permission',name: 'grouppermission.permission',component: PermissionGrouppermission},
-	{path: '/bgdata/provinces',name: 'provinces.index',component: IndexProvinces},
-	{path: '/bgdata/district',name: 'district.index',component: IndexDistrict},
-	{path: '/bgdata/ward',name: 'ward.index',component: IndexWard},
+    { path: '/staff-information/promote/', name: 'promote.index', component: IndexPromote },
+    { path: '/staff-information/promote/create', name: 'promote.create', component: CreatePromote },
+    { path: '/staff-information/promote/:idPromote/edit', name: 'promote.edit', component: UpdatePromote },
 
-	{path: '/staff-information/departments/',name: 'departments.index',component: IndexDepartments},
-	{path: '/staff-information/positions/',name: 'positions.index',component: IndexPositions},
-	{path: '/staff-information/levels/',name: 'levels.index',component: IndexLevels},
-	{path: '/staff-information/companys/',name: 'companys.index',component: IndexCompanys},
-	{path: '/staff-information/typeofwork/',name: 'typeofwork.index',component: IndexTypeofwork},
-	{path: '/laborcontract/userscontacts/',name: 'userscontacts.index',component: IndexUserscontacts},
-	{path: '/laborcontract/typecontacts/',name: 'typecontacts.index',component: IndexTypecontacts},
+    { path: '/bgdata/typemenusystem/', name: 'typemenusystem.index', component: IndextypeMenusystem },
+    { path: '/bgdata/typemenusystem/:id/listmenu', name: 'typemenusystem.listmenu', component: ListmenuypeMenusystem },
+    { path: '/bgdata/listpermission/', name: 'listpermission.index', component: IndexListpermission },
 
-	{path: '/salarys/calculated/',name: 'calculated.index',component: IndexCalculated},
-	{path: '/salarys/calculated/create',name: 'calculated.create',component: CreateCalculated},
-	{path: '/salarys/calculated/:idCalculated/edit',name: 'calculated.edit',component: UpdateCalculated},
+    { path: '/bgdata/grouppermission/', name: 'grouppermission.index', component: IndexGrouppermission },
+    { path: '/bgdata/grouppermission/:id/permission', name: 'grouppermission.permission', component: PermissionGrouppermission },
+    { path: '/bgdata/provinces', name: 'provinces.index', component: IndexProvinces },
+    { path: '/bgdata/district', name: 'district.index', component: IndexDistrict },
+    { path: '/bgdata/ward', name: 'ward.index', component: IndexWard },
+
+    { path: '/staff-information/departments/', name: 'departments.index', component: IndexDepartments },
+    { path: '/staff-information/positions/', name: 'positions.index', component: IndexPositions },
+    { path: '/staff-information/levels/', name: 'levels.index', component: IndexLevels },
+    { path: '/staff-information/companys/', name: 'companys.index', component: IndexCompanys },
+    { path: '/staff-information/typeofwork/', name: 'typeofwork.index', component: IndexTypeofwork },
+    { path: '/laborcontract/userscontacts/', name: 'userscontacts.index', component: IndexUserscontacts },
+    { path: '/laborcontract/typecontacts/', name: 'typecontacts.index', component: IndexTypecontacts },
+
+    { path: '/salarys/calculated/', name: 'calculated.index', component: IndexCalculated },
+    { path: '/salarys/calculated/create', name: 'calculated.create', component: CreateCalculated },
+    { path: '/salarys/calculated/:idCalculated/edit', name: 'calculated.edit', component: UpdateCalculated },
 
 ];
 const router = new VueRouter({
-	base: 'hrm/admincp',
-	mode: 'history',
-	routes,
-	scrollBehavior (to, from, savedPosition) {
-		return { x: 0, y: 0 }
-	},
-	meta: { transition: 'fade' }
+    base: 'hrm/public/admincp',
+    mode: 'history',
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    },
+    meta: { transition: 'fade' }
 })
-  
+
 export default router

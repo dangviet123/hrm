@@ -8,13 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+    <base href="{{ asset('') }}">
 
     <title>HRM - SPA</title>
-    <base href="{{asset('')}}" >
     <!-- Bootstrap -->
-    <link href="public/admin/all.css" rel="stylesheet">
-    <link href="public/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('admin/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
   </head>
 
   <body class="nav-md" >
@@ -45,7 +44,7 @@
     
     </div>
 
-    <script src="{{ asset('public/js/admincp.js') }}"></script>
-    <script src="public/admin/all.js"></script>
+    <script src="{{ asset('js/admincp.js') }}"></script>
+    <script src="{{ asset('admin/all.js') }}"></script>
   </body>
 </html>
