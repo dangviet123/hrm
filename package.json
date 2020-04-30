@@ -22,7 +22,7 @@
     "dependencies": {
         "file-saver": "^2.0.2",
         "fs": "0.0.1-security",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "pretty-checkbox-vue": "^1.1.9",
         "v-tooltip": "^2.0.2",
         "vue-cropperjs": "^4.0.1",
