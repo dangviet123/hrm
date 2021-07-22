@@ -43,7 +43,7 @@
         "vuejs-dialog": "^1.4.1",
         "vuejs-paginate": "^2.1.0",
         "vuelidate": "^0.7.4",
-        "xlsx": "^0.15.4",
+        "xlsx": "^0.17.0",
         "xlsx-style": "^0.8.13"
     }
 }
